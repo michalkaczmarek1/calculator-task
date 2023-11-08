@@ -2,24 +2,24 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 def add(number_one, number_two):
-    logging.info("Dodaje liczbe " + str(number_one) + " i " + str(number_two))
+    logging.info(f"Dodaje liczbe {str(number_one)} i {str(number_two)}")
     add_result = number_one + number_two
-    print("Wynik to " + str(add_result))
+    print(f"Wynik to {str(add_result)}")
     
 def subtract(number_one, number_two):
-    logging.info("Odejmuje liczbe " + str(number_one) + " i " + str(number_two))
+    logging.info(f"Odejmuje liczbe {str(number_one)} i {str(number_two)}")
     subtract_result = number_one - number_two
-    print("Wynik to " + str(subtract_result))
+    print(f"Wynik to {str(subtract_result)}")
 
 def multiply(number_one, number_two):
-    logging.info("Mnozę liczbę " + str(number_one) + " i " + str(number_two))
+    logging.info(f"Mnozę liczbę {str(number_one)} i {str(number_two)}")
     multiply_result = number_one * number_two
-    print("Wynik to " + str(multiply_result))
+    print(f"Wynik to {str(multiply_result)}")
     
 def divide(number_one, number_two):
-    logging.info("Mnozę liczbę " + str(number_one) + " i " + str(number_two))
+    logging.info(f"Dzielę liczbę {str(number_one)} i {str(number_two)}")
     divide_result = number_one / number_two
-    print("Wynik to " + str(divide_result))
+    print(f"Wynik to {str(divide_result)}")
 
 if __name__ == "__main__":    
     type_math_activity = int(input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnozenie, 4 Dzielenie: "))
